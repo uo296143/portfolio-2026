@@ -13,6 +13,7 @@ const getIcon = (iconName: string) => {
         Code: Icons.Code,
         Coffee: Icons.Coffee,
         Database: Icons.Database,
+        Hash: Icons.Hash,
         BarChart3: Icons.BarChart3,
         Trello: Icons.Trello,
         GitBranch: Icons.GitBranch,
@@ -28,7 +29,7 @@ export const Skills = () => {
         return acc;
     }, {} as Record<string, typeof skills>);
 
-    const categoryOrder = ['Frontend', 'Desarrollo Móvil', 'Desarrollo Web', 'Lenguajes', 'Herramientas'];
+    const categoryOrder = ['Frontend', 'Desarrollo Móvil', 'Desarrollo Web', 'Bases de datos', 'Lenguajes', 'Herramientas'];
 
     return (
         <section id="tecnologias" className="py-20">

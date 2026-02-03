@@ -1,4 +1,7 @@
+"use client";
+
 import Image from 'next/image';
+import { useState } from 'react';
 import { Github, ExternalLink, Download } from 'lucide-react';
 
 interface Project {
@@ -10,7 +13,7 @@ interface Project {
     deploy?: string;
     demo?: string;
     download?: string;
-    image?: string;
+    image?: string; // base path without extension, e.g. /projects/paycarbierzo
 }
 
 export const ProjectCard = ({ project }: { project: Project }) => {
@@ -30,14 +33,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
                     />
                 </div>
             ) : project.image ? (
-                <div className="w-full h-48 relative overflow-hidden bg-gray-100">
-                    <Image
-                        src={project.image}
-                        alt={`${project.title} - Proyecto`}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                </div>
+                <ImageBlock imageBase={project.image} title={project.title} />
             ) : null}
 
             <div className="project-card-body" style={{ minHeight: 160 }}>
@@ -123,3 +119,22 @@ export const ProjectCard = ({ project }: { project: Project }) => {
         </article>
     );
 };
+
+function ImageBlock({ imageBase, title }: { imageBase: string; title: string }) {
+    const [src, setSrc] = useState(imageBase + '.png');
+
+    return (
+        <div className="w-full h-48 relative overflow-hidden bg-gray-100">
+            <Image
+                src={src}
+                alt={`${title} - Proyecto`}
+                fill
+                onError={() => {
+                    // fallback to svg if png missing
+                    if (src.endsWith('.png')) setSrc(imageBase + '.svg');
+                }}
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+        </div>
+    );
+}

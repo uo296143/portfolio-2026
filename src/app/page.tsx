@@ -32,7 +32,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
-                <a href="/mi-cv.pdf" download className="flex items-center justify-center gap-2 px-6 py-3 btn-primary rounded-full font-semibold hover:scale-105 transition-transform">
+                <a href="/CV_Juan_Fernandez_Lopez.pdf" download="CV_Juan_Fernandez_Lopez.pdf" className="flex items-center justify-center gap-2 px-6 py-3 btn-primary rounded-full font-semibold hover:scale-105 transition-transform">
                   <FileDown size={18} /> Descargar CV
                 </a>
                 <a href="#proyectos" className="flex items-center justify-center gap-2 px-6 py-3 border rounded-full font-semibold" style={{ color: 'var(--fg)', borderColor: 'rgba(15,23,42,0.1)' }}>

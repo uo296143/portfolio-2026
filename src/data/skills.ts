@@ -12,16 +12,20 @@ export const skills = [
     { name: "Android", category: "Desarrollo Móvil", level: 80, icon: "Smartphone" },
     { name: "XML", category: "Desarrollo Móvil", level: 85, icon: "Code" },
 
-    // Desarrollo Web & Backend
-    { name: "Java", category: "Desarrollo Web", level: 90, icon: "Coffee" },
-    { name: "PHP", category: "Desarrollo Web", level: 75, icon: "Code2" },
-    { name: "JDBC", category: "Desarrollo Web", level: 85, icon: "Database" },
-    { name: "JPA", category: "Desarrollo Web", level: 80, icon: "Database" },
+    // Backend / Persistencia
+    { name: "Java", category: "Backend / Persistencia", level: 90, icon: "Coffee" },
+    { name: "PHP", category: "Backend / Persistencia", level: 75, icon: "Code2" },
+    { name: "JDBC", category: "Bases de datos", level: 85, icon: "Database" },
+    { name: "JPA", category: "Bases de datos", level: 80, icon: "Database" },
+    { name: "SQL", category: "Bases de datos", level: 90, icon: "Database" },
+    { name: "PL/SQL", category: "Bases de datos", level: 80, icon: "Database" },
+    { name: "Neo4j", category: "Bases de datos", level: 75, icon: "Database" },
 
     // Lenguajes de Programación
     { name: "Python", category: "Lenguajes", level: 75, icon: "Code2" },
     { name: "C", category: "Lenguajes", level: 70, icon: "Code2" },
     { name: "C++", category: "Lenguajes", level: 70, icon: "Code2" },
+    { name: "C#", category: "Lenguajes", level: 75, icon: "Hash" },
 
     // Herramientas & Metodologías
     { name: "Matlab", category: "Herramientas", level: 70, icon: "BarChart3" },
