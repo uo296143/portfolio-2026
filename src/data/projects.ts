@@ -6,6 +6,7 @@ export const projects = [
         image: "/projects/y",
         progress: 10,
         isTeam: true,
+        isSchool: true,
         stack: ["TypeScript", "Node.js", "Rust", "Microservicios", "Web"]
     },
     {
