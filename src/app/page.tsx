@@ -40,7 +40,7 @@ function Home() {
               </h1>
               <p className="muted text-base md:text-lg leading-relaxed mb-4 md:mb-2">
                 {locale === "es"
-                  ? "Hola, soy Juan, tengo 21 años,natural de Ponferrada (El Bierzo) aunque actualmente resido en Oviedo, donde curso el penúltimo año de Ingeniería Informática del Software. Este verano quiero realizar unas prácticas para incorporarme al mundo empresarial y aplicar mis conocimientos en proyectos reales. Me considero una persona motivada, con ganas de aprender y aportar valor desde el primer día. Además de la ingeniería, me apasionan la historia y el deporte."
+                  ? "Hola, soy Juan, tengo 21 años y soy natural de Ponferrada (El Bierzo), aunque actualmente resido en Oviedo. Estoy cursando el penúltimo año de Ingeniería Informática del Software. Este verano me gustaría realizar unas prácticas para incorporarme al mundo empresarial y aplicar mis conocimientos en proyectos reales.\n\nMe considero una persona motivada, con muchas ganas de aprender y de aportar valor desde el primer día. Además de la ingeniería, me apasionan la historia y el deporte."
                   : "Hi, I'm Juan, 21 years old, from Ponferrada (El Bierzo) but currently living in Oviedo, where I'm in my penultimate year of Software Engineering. This summer I want to do an internship to join the business world and apply my knowledge to real projects. I consider myself a motivated person, eager to learn and contribute from day one. Besides engineering, I'm passionate about history and sports."}
               </p>
 
@@ -62,8 +62,18 @@ function Home() {
                   {locale === "es" ? "Ver Proyectos" : "See Projects"}
                 </a>
               </div>
+              {/* Carrusel solo visible en móvil, debajo de los botones */}
+              <div className="flex md:hidden justify-center mt-16 mb-2">
+                <div className="w-full max-w-xs card overflow-hidden rounded-xl" style={{ aspectRatio: '16/10' }}>
+                  <ImageCarousel
+                    images={['/hero.jpg', '/hero-city.jpg']}
+                    alt={locale === "es" ? "Galería - Construyendo productos" : "Gallery - Building products"}
+                  />
+                </div>
+              </div>
             </div>
 
+            {/* Carrusel solo visible en escritorio */}
             <div className="hidden md:flex justify-end">
               <div className="w-full max-w-md lg:max-w-lg card overflow-hidden rounded-xl" style={{ aspectRatio: '16/10' }}>
                 <ImageCarousel

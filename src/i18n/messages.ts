@@ -47,6 +47,10 @@ export const messages = {
             tools: "Herramientas"
         },
         projects: {
+            compilador: {
+                title: "Compilador ANTLR (lenguaje parecido a Python)",
+                description: "Compilador para crear un lenguaje propio similar a Python, pero distinto, utilizando la herramienta ANTLR y programado en Java."
+            },
             yovi: {
                 title: "Aplicación Web para jugar al juego Y",
                 description: "Aplicación web desarrollada en equipo para jugar al juego Y contra la máquina. Frontend en TypeScript/Node.js con arquitectura de microservicios. Backend en Rust con lógica de IA para jugar contra el usuario. Proyecto colaborativo que integra tecnologías modernas y patrones de diseño escalables."
@@ -121,6 +125,10 @@ export const messages = {
             tools: "Tools"
         },
         projects: {
+            compilador: {
+                title: "ANTLR Compiler (Python-like language)",
+                description: "Compiler to create a custom language similar to Python, but different, using the ANTLR tool and programmed in Java."
+            },
             yovi: {
                 title: "Game Web Application (Y Game)",
                 description: "Team-developed web app to play the Y game against the computer. Frontend in TypeScript/Node.js with microservices architecture. Backend in Rust with AI logic to play against the user. Collaborative project integrating modern technologies and scalable design patterns."

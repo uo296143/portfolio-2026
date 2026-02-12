@@ -62,5 +62,13 @@ export const projects = [
         isTeam: true,
         isSchool: true,
         stack: ["C++", "Arduino"]
+    },
+    {
+        id: "compilador",
+        github: "https://github.com/uo296143/Compilador.git",
+        image: "/projects/compilador",
+        progress: 10,
+        isSchool: true,
+        stack: ["Java", "ANTLR", "Compiladores"]
     }
 ];

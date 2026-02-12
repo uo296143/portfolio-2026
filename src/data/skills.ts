@@ -37,4 +37,5 @@ export const skills = [
     { name: "R", category: "Herramientas", level: 65, icon: "BarChart3" },
     { name: "Scrum", category: "Herramientas", level: 80, icon: "Trello" },
     { name: "Git", category: "Herramientas", level: 85, icon: "GitBranch" },
+    { name: "ANTLR", category: "Herramientas", level: 60, icon: "Settings" },
 ];
